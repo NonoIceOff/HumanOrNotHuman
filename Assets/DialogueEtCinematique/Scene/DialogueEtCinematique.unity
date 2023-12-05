@@ -249,8 +249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076294, y: -229.18}
-  m_SizeDelta: {x: 880.4, y: 30.85}
+  m_AnchoredPosition: {x: -5.8339, y: -230.6385}
+  m_SizeDelta: {x: 807.4747, y: 27.933}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246207831
 MonoBehaviour:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -24.275288, z: 0, w: 0}
+  m_margin: {x: 0, y: -24.275288, z: 0, w: 13.126493}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1165,10 +1165,11 @@ MonoBehaviour:
   fourPathCamera: {fileID: 53991845}
   txt: {fileID: 246207831}
   dialogues:
-  - histoirezdbvuded
-  - dialogue 2
-  - dialogue 3
-  - dialogue 4
+  - "Le monde est r\xE9git de titans. Nous avons construit des murs pour nous progt\xE9ger."
+  - "Cependant ces titans arrivent \xE0 d\xE9truire le mur et \xE0 entrer dans le
+    village."
+  - Trop relou hein !
+  - "Aidez-nous \xE0 survivre !"
 --- !u!1 &1960484635
 GameObject:
   m_ObjectHideFlags: 0

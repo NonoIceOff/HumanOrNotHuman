@@ -33,14 +33,20 @@ public class Cinematics : MonoBehaviour
     private void Update()
     {
         string actualDialogue = dialogues[i];
-        int dialoguelenght = actualDialogue.Lenght;
+        int dialoguelenght = actualDialogue.Length;
 
-        visibleratio += 1;
+        txt.text = actualDialogue.Substring(0, visibleratio/10);
 
-        txt.text = actualDialogue.Substring(0, visibleratio);
+        if (visibleratio <= dialoguelenght*10) {
+            visibleratio += 5;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            actualDialogue = dialogues[i];
+            dialoguelenght = actualDialogue.Length;
+            visibleratio = 0;
+
             if (i == 0) {
                 firstPathCamera.enabled = false;
                 secondPathCamera.enabled = true;
