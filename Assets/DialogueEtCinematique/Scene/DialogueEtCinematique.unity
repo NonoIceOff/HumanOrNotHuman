@@ -374,8 +374,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255944761}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70356405, z: -0, w: 0.71063185}
-  m_LocalPosition: {x: -10, y: 1, z: -7.5}
+  m_LocalRotation: {x: -0, y: 0.19897525, z: -0, w: 0.98000455}
+  m_LocalPosition: {x: -10, y: 3, z: -7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1103,13 +1103,11 @@ MonoBehaviour:
     width: 0.2
   m_Looped: 1
   m_Waypoints:
-  - position: {x: -10, y: 1, z: -7.5}
+  - position: {x: -10, y: 3, z: -7.5}
     roll: 0
-  - position: {x: 40, y: 1, z: -7.5}
+  - position: {x: 40, y: 3, z: -7.5}
     roll: 0
-  - position: {x: 40, y: 1, z: -8}
-    roll: 0
-  - position: {x: -10, y: 1, z: -8}
+  - position: {x: 20, y: 3, z: -50}
     roll: 0
 --- !u!1 &1889882316
 GameObject:
