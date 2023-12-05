@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 246207832}
   - component: {fileID: 246207831}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,6 +1159,7 @@ MonoBehaviour:
   secondPathCamera: {fileID: 1052602454}
   thirdPathCamera: {fileID: 785897029}
   fourPathCamera: {fileID: 53991845}
+  txt: {fileID: 246207831}
 --- !u!1 &1960484635
 GameObject:
   m_ObjectHideFlags: 0
