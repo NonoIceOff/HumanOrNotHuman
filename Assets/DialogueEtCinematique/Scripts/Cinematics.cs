@@ -17,7 +17,6 @@ public class Cinematics : MonoBehaviour
 
     int i;
     int visibleratio;
-
     public string[] dialogues = {"dialogue 1", "dialogue 2", "dialogue 3", "dialogue 4"};
 
     private void Start()
@@ -74,6 +73,7 @@ public class Cinematics : MonoBehaviour
                     secondPathCamera.enabled = false;
                     thirdPathCamera.enabled = false;
                     fourPathCamera.enabled = false;
+                    txt.text = "";
                 }
 
                 i += 1;
