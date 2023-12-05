@@ -1,11 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Exit : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     public void button_exit()
     {
-        Debug.Log("exit");
         Application.Quit();
+    }
 
+    public void button_play()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }
