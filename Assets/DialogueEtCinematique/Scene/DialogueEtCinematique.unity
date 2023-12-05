@@ -374,8 +374,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255944761}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.70356405, z: -0, w: 0.71063185}
+  m_LocalPosition: {x: -10, y: 1, z: -7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Resolution: 20
+  m_Resolution: 50
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -438,15 +438,15 @@ MonoBehaviour:
   - position: {x: -80, y: 25, z: 0}
     roll: 0
   - position: {x: -49.392803, y: 10, z: 34.507027}
-    roll: 10
+    roll: 5
   - position: {x: 0, y: 25, z: 50}
-    roll: 20
-  - position: {x: 70, y: 30, z: 0}
     roll: 10
+  - position: {x: 70, y: 30, z: 0}
+    roll: 0
   - position: {x: 65, y: 10, z: -80}
-    roll: 180
+    roll: -5
   - position: {x: -65, y: 30, z: -90}
-    roll: 35
+    roll: -10
 --- !u!4 &314932962
 Transform:
   m_ObjectHideFlags: 0
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Resolution: 20
+  m_Resolution: 50
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -1096,16 +1096,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Resolution: 20
+  m_Resolution: 50
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     width: 0.2
   m_Looped: 1
   m_Waypoints:
-  - position: {x: 0, y: 0, z: 0}
+  - position: {x: -10, y: 1, z: -7.5}
     roll: 0
-  - position: {x: 5, y: 0, z: 0}
+  - position: {x: 40, y: 1, z: -7.5}
+    roll: 0
+  - position: {x: 40, y: 1, z: -8}
+    roll: 0
+  - position: {x: -10, y: 1, z: -8}
     roll: 0
 --- !u!1 &1889882316
 GameObject:
@@ -1160,6 +1164,11 @@ MonoBehaviour:
   thirdPathCamera: {fileID: 785897029}
   fourPathCamera: {fileID: 53991845}
   txt: {fileID: 246207831}
+  dialogues:
+  - histoirezdbvuded
+  - dialogue 2
+  - dialogue 3
+  - dialogue 4
 --- !u!1 &1960484635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Resolution: 20
+  m_Resolution: 50
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

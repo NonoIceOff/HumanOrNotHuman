@@ -14,10 +14,12 @@ public class Cinematics : MonoBehaviour
     public TextMeshProUGUI txt;
 
     int i;
+    int visibleratio;
+
+    public string[] dialogues = {"dialogue 1", "dialogue 2", "dialogue 3", "dialogue 4"};
 
     private void Start()
     {
-        txt.text = "Caméra 1";
         i = 0;
         firstPathCamera.enabled = true;
         secondPathCamera.enabled = false;
@@ -30,24 +32,28 @@ public class Cinematics : MonoBehaviour
 
     private void Update()
     {
+        string actualDialogue = dialogues[i];
+        int dialoguelenght = actualDialogue.Lenght;
+
+        visibleratio += 1;
+
+        txt.text = actualDialogue.Substring(0, visibleratio);
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (i == 0) {
-                txt.text = "Caméra 2";
                 firstPathCamera.enabled = false;
                 secondPathCamera.enabled = true;
                 secondPathCamera = Camera.main;
             }
 
             if (i == 1) {
-                txt.text = "Caméra 3";
                 secondPathCamera.enabled = false;
                 thirdPathCamera.enabled = true;
                 thirdPathCamera = Camera.main;
             }
 
             if (i == 2) {
-                txt.text = "Caméra 4";
                 thirdPathCamera.enabled = false;
                 fourPathCamera.enabled = true;
                 fourPathCamera = Camera.main;
