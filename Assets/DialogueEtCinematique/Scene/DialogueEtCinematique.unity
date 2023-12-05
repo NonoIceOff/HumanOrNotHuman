@@ -272,7 +272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C'est le texte de la cin\xE9matique"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -588,7 +588,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824675036}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1164,6 +1164,7 @@ MonoBehaviour:
   thirdPathCamera: {fileID: 785897029}
   fourPathCamera: {fileID: 53991845}
   txt: {fileID: 246207831}
+  enableCinematics: 1
   dialogues:
   - "Le monde est r\xE9git de titans. Nous avons construit des murs pour nous progt\xE9ger."
   - "Cependant ces titans arrivent \xE0 d\xE9truire le mur et \xE0 entrer dans le

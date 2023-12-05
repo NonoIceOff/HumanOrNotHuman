@@ -13,6 +13,8 @@ public class Cinematics : MonoBehaviour
 
     public TextMeshProUGUI txt;
 
+    public bool enableCinematics;
+
     int i;
     int visibleratio;
 
@@ -21,51 +23,61 @@ public class Cinematics : MonoBehaviour
     private void Start()
     {
         i = 0;
-        firstPathCamera.enabled = true;
+        if (enableCinematics == true) {
+            firstPathCamera.enabled = true;
+            //firstPathCamera = Camera.main;
+        }
         secondPathCamera.enabled = false;
         thirdPathCamera.enabled = false;
         fourPathCamera.enabled = false;
-
-        firstPathCamera.enabled = true;
-        firstPathCamera = Camera.main;
     }
 
     private void Update()
     {
-        string actualDialogue = dialogues[i];
-        int dialoguelenght = actualDialogue.Length;
+        if (enableCinematics == true) {
+            string actualDialogue = dialogues[i];
+            int dialoguelenght = actualDialogue.Length;
 
-        txt.text = actualDialogue.Substring(0, visibleratio/10);
+            txt.text = actualDialogue.Substring(0, visibleratio/10);
 
-        if (visibleratio <= dialoguelenght*10) {
-            visibleratio += 5;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            actualDialogue = dialogues[i];
-            dialoguelenght = actualDialogue.Length;
-            visibleratio = 0;
-
-            if (i == 0) {
-                firstPathCamera.enabled = false;
-                secondPathCamera.enabled = true;
-                secondPathCamera = Camera.main;
+            if (visibleratio <= dialoguelenght*10) {
+                visibleratio += 5;
             }
 
-            if (i == 1) {
-                secondPathCamera.enabled = false;
-                thirdPathCamera.enabled = true;
-                thirdPathCamera = Camera.main;
-            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                actualDialogue = dialogues[i];
+                dialoguelenght = actualDialogue.Length;
+                visibleratio = 0;
 
-            if (i == 2) {
-                thirdPathCamera.enabled = false;
-                fourPathCamera.enabled = true;
-                fourPathCamera = Camera.main;
-            }
+                if (i == 0) {
+                    firstPathCamera.enabled = false;
+                    secondPathCamera.enabled = true;
+                   // secondPathCamera = Camera.main;
+                }
 
-            i += 1;
+                if (i == 1) {
+                    secondPathCamera.enabled = false;
+                    thirdPathCamera.enabled = true;
+                   // thirdPathCamera = Camera.main;
+                }
+
+                if (i == 2) {
+                    thirdPathCamera.enabled = false;
+                    fourPathCamera.enabled = true;
+                   // fourPathCamera = Camera.main;
+                }
+
+                if (i==3) {
+                    enableCinematics = false;
+                    firstPathCamera.enabled = false;
+                    secondPathCamera.enabled = false;
+                    thirdPathCamera.enabled = false;
+                    fourPathCamera.enabled = false;
+                }
+
+                i += 1;
+            }
         }
     }
 }
