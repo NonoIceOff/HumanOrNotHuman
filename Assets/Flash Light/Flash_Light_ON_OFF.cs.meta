@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 9089fce1353bd4b0ab8c25b54326ab94
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - lightSource: {fileID: 919132149155446097, guid: 733ca267fbd67423cbaecca9123275bf, type: 3}
+  - clickSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
