@@ -52,9 +52,6 @@ public class Flash_Light_ON_OFF : MonoBehaviour
         */
 
     
-
-
-
         if(Input.GetKeyDown(KeyCode.F))
         {
             GetComponent<Light>().enabled = !GetComponent<Light>().enabled;
