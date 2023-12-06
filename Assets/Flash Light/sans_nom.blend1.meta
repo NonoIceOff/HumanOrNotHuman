@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Flash Light/sans_nom.blend1.meta
 guid: 21b2df6c72d0a480085c33afacf63649
+========
+guid: 90007aaede95ef34bbf2880182718884
+>>>>>>>> origin/menus:Assets/Menuing/Scenes/MainMenu.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
