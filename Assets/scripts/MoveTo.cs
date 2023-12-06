@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class MoveTo : MonoBehaviour
 {
-    // Start is called before the first frame update
-       public Transform goal;
-       
-       void Update () {
-          UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-          agent.destination = goal.position; 
-       }
+    public Transform goal;
+    Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    
+    void Update () {
+        UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent.destination = goal.position; 
+
+        animator.SetFloat("Move", agent.velocity.magnitude);
+    }
+
 }
