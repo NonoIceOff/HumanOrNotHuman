@@ -47,7 +47,7 @@ public class Cinematics2 : MonoBehaviour
         visibleratio = 0;
 
 
-        if (i==1) {
+        if (i==0) {
             enableCinematics = false;
             firstPathCamera.enabled = false;
             txt.text = "";

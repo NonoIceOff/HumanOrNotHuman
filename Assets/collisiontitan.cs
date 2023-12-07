@@ -75,6 +75,8 @@ public class collisiontitan : MonoBehaviour
     public AudioSource MyAudioSource;
     public AudioSource Bilar;
 
+    public GameObject nextCinematic; 
+
 
 
 
@@ -118,6 +120,7 @@ public class collisiontitan : MonoBehaviour
             objetADisparaitre27.SetActive(false);
             objetADisparaitre28.SetActive(false);
             objetADisparaitre29.SetActive(false);
+            nextCinematic.SetActive(true);
         }
     }
 
