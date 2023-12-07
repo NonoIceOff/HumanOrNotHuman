@@ -8,6 +8,7 @@ public class activationost : MonoBehaviour
     public string tagDuCollider = "ost1";
     
     public GameObject objetAApparaitre;
+    public GameObject objetAApparaitre1;
     public AudioSource MyAudioSource;
     
     void OnTriggerEnter(Collider other)
@@ -15,7 +16,7 @@ public class activationost : MonoBehaviour
         if (other.CompareTag(tagDuCollider))
         {   
             objetAApparaitre.SetActive(true);
-
+            objetAApparaitre1.SetActive(true);
             
         }
     }
