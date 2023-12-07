@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - collision
+  - miniboss
+  - larbi
+  - ost1
   layers:
   - Default
   - TransparentFX

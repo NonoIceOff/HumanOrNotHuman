@@ -17,6 +17,8 @@ public class Cinematics : MonoBehaviour
 
     public int delayInterDialogues;
 
+    public GameObject nextCinematic; 
+
     int actualDelay;
 
     int i;
@@ -67,6 +69,7 @@ public class Cinematics : MonoBehaviour
             thirdPathCamera.enabled = false;
             fourPathCamera.enabled = false;
             txt.text = "";
+            nextCinematic.SetActive(true);
         }
 
         i += 1;
