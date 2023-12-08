@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menuing/Scenes/MainMenu.unity
-    guid: 90007aaede95ef34bbf2880182718884
-  - enabled: 1
     path: Assets/EmaceArt/Slavic World Free/Scene/Slavica Free 2022 Version.unity
     guid: 4e4c5b0f6c1c69448be7c5631ed01457
+  - enabled: 1
+    path: Assets/Menuing/Scenes/MainMenu.unity
+    guid: df3b7e288bb724c41ab8847dcda65b2b
   m_configObjects: {}

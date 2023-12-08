@@ -12,7 +12,10 @@ public class degat : MonoBehaviour
    public AudioSource death;
 
      public string tagDuCollider = "miniboss";
-    // Start is called before the first frame update
+
+
+
+   
     void OnTriggerEnter(Collider other)
     {
 
@@ -22,14 +25,14 @@ public class degat : MonoBehaviour
             objetAApparaitre.SetActive(true);
            
            
-            UnityEngine.Debug.Log("let's goooo");
+            //UnityEngine.Debug.Log("let's goooo");
             //using UnityEngine.SceneManagement;
             //UnityEngine.SceneManagement.SceneManager.LoadScene(0); 
             //UnityEngine.SceneManagement.SceneManager.UnloadScene(1);
             ActivateSceneObjects();
             //SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
 
-        }
+        } 
     }
 
     void ActivateSceneObjects() {
@@ -40,4 +43,8 @@ public class degat : MonoBehaviour
             item.SetActive(true);
         }
   }
+   
+
+
+
 }
